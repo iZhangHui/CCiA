@@ -1,6 +1,8 @@
-C++ Concurrency in Action
+![](https://cloud.githubusercontent.com/assets/6889915/19406598/848ebbc8-92bb-11e6-9769-c3e6fcf89731.jpg)
+
+C++ Concurrency in Action - Practical Multithreading
 =========================
-*Practical Multithreading*
+
 -------------------------
 ## Source code
 
