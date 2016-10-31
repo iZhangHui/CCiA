@@ -26,6 +26,7 @@ install:
   - sudo apt-get install -y g++-5
   - sudo apt-get install -y clang-3.8
   - sudo apt-get install -y clang++-3.8
+  - sudo apt-get install libboost-dev
   - export CC=gcc-5
   - echo $CC
   - export CXX=g++-5
