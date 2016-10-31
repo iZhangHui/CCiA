@@ -35,4 +35,7 @@ add_executable(listing_3.12 listing_3.12.cpp)
 target_link_libraries(listing_3.12 pthread)
 
 add_executable(listing_3.13 listing_3.13.cpp)
-target_link_libraries(listing_3.13 boost_thread boost_system)
+target_link_libraries(listing_3.13
+						${Boost_SYSTEM_LIBRARY}
+						${Boost_THREAD_LIBRARY}
+)

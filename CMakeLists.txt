@@ -39,7 +39,7 @@ set(CMAKE_CXX_FLAGS_DEBUG "-O0")
 set(CMAKE_CXX_FLAGS_RELEASE "-O2 -finline-limit=1000 -DNDEBUG")
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
-find_package(Boost REQUIRED)
+find_package(Boost COMPONENTS system thread REQUIRED)
 
 include_directories(${Boost_INCLUDE_DIRS})
 include_directories("${PROJECT_SOURCE_DIR}/src/")
