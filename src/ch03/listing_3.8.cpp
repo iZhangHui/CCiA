@@ -1,5 +1,6 @@
 #include <mutex>
 #include <stdexcept>
+#include <climits>
 
 class hierarchical_mutex
 {
@@ -46,11 +47,11 @@ public:
     }
 };
 thread_local unsigned long
-    hierarchical_mutex::this_thread_hierarchy_value(ULONG_MAX);       
+    hierarchical_mutex::this_thread_hierarchy_value(ULONG_MAX);
 
 int main()
 {
     hierarchical_mutex m1(42);
     hierarchical_mutex m2(2000);
-    
+
 }

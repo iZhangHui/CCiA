@@ -2,7 +2,7 @@
 
 void foo(int a,int b)
 {
-    std::cout<<a<<”,”<<b<<std::endl;
+    std::cout<<a<<","<<b<<std::endl;
 }
 
 int get_num()

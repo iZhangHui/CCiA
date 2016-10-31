@@ -1,4 +1,6 @@
 #include <deque>
+using std::size_t;
+
 template<typename T,typename Container=std::deque<T> >
 class stack
 {
