@@ -1,9 +1,10 @@
 ![](https://cloud.githubusercontent.com/assets/6889915/19406598/848ebbc8-92bb-11e6-9769-c3e6fcf89731.jpg)
 
 C++ Concurrency in Action - Practical Multithreading
-=========================
+====================================================
 
--------------------------
+ [![Build Status](https://travis-ci.org/iZhangHui/CCiA.svg?branch=master)](https://travis-ci.org/iZhangHui/CCiA) ![Language](https://img.shields.io/badge/language-C%2B%2B11-orange.svg)
+
 ## Source code
 
 - The source code of the Book [C++ Concurrency in Action](http://www.manning.com/williams/)
