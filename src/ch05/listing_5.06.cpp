@@ -4,7 +4,7 @@
 
 std::atomic<int> x(0),y(0),z(0);
 std::atomic<bool> go(false);
-unsigned const loop_count=10;
+unsigned const loop_count = 10;
 
 struct read_values
 {
@@ -61,7 +61,7 @@ int main()
     std::thread t3(increment, &z, values3);
     std::thread t4(read_vals, values4);
     std::thread t5(read_vals, values5);
-    go=true;
+    go = true;
     t5.join();
     t4.join();
     t3.join();

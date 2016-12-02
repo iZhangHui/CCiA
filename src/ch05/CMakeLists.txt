@@ -1,4 +1,7 @@
-add_library(ch05 listing_5.01.cpp listing_5.02.cpp)
+add_library(ch05 listing_5.01.cpp)
+
+add_executable(listing_5.02 listing_5.02.cpp)
+target_link_libraries(listing_5.02 pthread)
 
 add_executable(listing_5.03 listing_5.03.cpp)
 target_link_libraries(listing_5.03 pthread)

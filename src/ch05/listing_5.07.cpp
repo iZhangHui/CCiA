@@ -18,6 +18,7 @@ void write_y()
 void read_x_then_y()
 {
     while (!x.load(std::memory_order_acquire));
+
     if (y.load(std::memory_order_acquire))
         ++z;
 }
@@ -25,15 +26,16 @@ void read_x_then_y()
 void read_y_then_x()
 {
     while (!y.load(std::memory_order_acquire));
+
     if (x.load(std::memory_order_acquire))
         ++z;
 }
 
 int main()
 {
-    x=false;
-    y=false;
-    z=0;
+    x = false;
+    y = false;
+    z = 0;
     std::thread a(write_x);
     std::thread b(write_y);
     std::thread c(read_x_then_y);
@@ -42,5 +44,5 @@ int main()
     b.join();
     c.join();
     d.join();
-    assert(z.load()!=0);
+    assert(z.load() != 0);
 }

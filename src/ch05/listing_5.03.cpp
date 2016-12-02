@@ -7,7 +7,7 @@ void foo(int a,int b)
 
 int get_num()
 {
-    static int i=0;
+    static int i = 0;
     return ++i;
 }
 
