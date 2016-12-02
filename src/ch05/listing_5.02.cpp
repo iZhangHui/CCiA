@@ -15,6 +15,7 @@ void reader_thread()
     }
     std::cout<<"The answer="<<data[0]<<"\n";
 }
+
 void writer_thread()
 {
     data.push_back(42);

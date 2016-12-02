@@ -8,15 +8,17 @@ std::atomic<int> z;
 
 void write_x_then_y()
 {
-    x=true;
+    x = true;
     std::atomic_thread_fence(std::memory_order_release);
-    y.store(true,std::memory_order_relaxed);
+    y.store(true, std::memory_order_relaxed);
 }
 
 void read_y_then_x()
 {
-    while(!y.load(std::memory_order_relaxed));
+    while (!y.load(std::memory_order_relaxed));
+
     std::atomic_thread_fence(std::memory_order_acquire);
+
     if(x)
         ++z;
 }
@@ -30,5 +32,5 @@ int main()
     std::thread b(read_y_then_x);
     a.join();
     b.join();
-    assert(z.load()!=0);
+    assert(z.load() != 0);
 }

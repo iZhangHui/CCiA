@@ -1,35 +1,31 @@
-# add_executable(listing_5.1 listing_5.1.cpp)
-# target_link_libraries(listing_5.1 pthread)
+add_library(ch05 listing_5.01.cpp listing_5.02.cpp)
 
-# add_executable(listing_5.2 listing_5.2.cpp)
-# target_link_libraries(listing_5.2 pthread)
+add_executable(listing_5.03 listing_5.03.cpp)
+target_link_libraries(listing_5.03 pthread)
 
-add_executable(listing_5.3 listing_5.3.cpp)
-target_link_libraries(listing_5.3 pthread)
+add_executable(listing_5.04 listing_5.04.cpp)
+target_link_libraries(listing_5.04 pthread)
 
-add_executable(listing_5.4 listing_5.4.cpp)
-target_link_libraries(listing_5.4 pthread)
+add_executable(listing_5.05 listing_5.05.cpp)
+target_link_libraries(listing_5.05 pthread)
 
-add_executable(listing_5.5 listing_5.5.cpp)
-target_link_libraries(listing_5.5 pthread)
+add_executable(listing_5.06 listing_5.06.cpp)
+target_link_libraries(listing_5.06 pthread)
 
-add_executable(listing_5.6 listing_5.6.cpp)
-target_link_libraries(listing_5.6 pthread)
+add_executable(listing_5.07 listing_5.07.cpp)
+target_link_libraries(listing_5.07 pthread)
 
-add_executable(listing_5.7 listing_5.7.cpp)
-target_link_libraries(listing_5.7 pthread)
+add_executable(listing_5.08 listing_5.08.cpp)
+target_link_libraries(listing_5.08 pthread)
 
-add_executable(listing_5.8 listing_5.8.cpp)
-target_link_libraries(listing_5.8 pthread)
-
-add_executable(listing_5.9 listing_5.9.cpp)
-target_link_libraries(listing_5.9 pthread)
+add_executable(listing_5.09 listing_5.09.cpp)
+target_link_libraries(listing_5.09 pthread)
 
 add_executable(listing_5.10 listing_5.10.cpp)
 target_link_libraries(listing_5.10 pthread)
 
-# add_executable(listing_5.11 listing_5.11.cpp)
-# target_link_libraries(listing_5.11 pthread)
+add_executable(listing_5.11 listing_5.11.cpp)
+target_link_libraries(listing_5.11 pthread)
 
 add_executable(listing_5.12 listing_5.12.cpp)
 target_link_libraries(listing_5.12 pthread)

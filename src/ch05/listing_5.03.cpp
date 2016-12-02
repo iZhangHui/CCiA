@@ -13,5 +13,5 @@ int get_num()
 
 int main()
 {
-    foo(get_num(),get_num());
+    foo(get_num(), get_num());
 }

@@ -14,9 +14,11 @@ void write_x_then_y()
 
 void read_y_then_x()
 {
-    while(!y.load(std::memory_order_relaxed));
+    while (!y.load(std::memory_order_relaxed));
+
     std::atomic_thread_fence(std::memory_order_acquire);
-    if(x.load(std::memory_order_relaxed))
+
+    if (x.load(std::memory_order_relaxed))
         ++z;
 }
 
@@ -29,5 +31,5 @@ int main()
     std::thread b(read_y_then_x);
     a.join();
     b.join();
-    assert(z.load()!=0);
+    assert(z.load() != 0);
 }

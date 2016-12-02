@@ -7,25 +7,25 @@ std::atomic<int> z;
 
 void write_x()
 {
-    x.store(true,std::memory_order_seq_cst);
+    x.store(true, std::memory_order_release);
 }
 
 void write_y()
 {
-    y.store(true,std::memory_order_seq_cst);
+    y.store(true, std::memory_order_release);
 }
 
 void read_x_then_y()
 {
-    while(!x.load(std::memory_order_seq_cst));
-    if(y.load(std::memory_order_seq_cst))
+    while (!x.load(std::memory_order_acquire));
+    if (y.load(std::memory_order_acquire))
         ++z;
 }
 
 void read_y_then_x()
 {
-    while(!y.load(std::memory_order_seq_cst));
-    if(x.load(std::memory_order_seq_cst))
+    while (!y.load(std::memory_order_acquire));
+    if (x.load(std::memory_order_acquire))
         ++z;
 }
 

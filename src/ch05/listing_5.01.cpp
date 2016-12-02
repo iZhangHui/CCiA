@@ -1,3 +1,5 @@
+#include <atomic>
+
 class spinlock_mutex
 {
     std::atomic_flag flag;

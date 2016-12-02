@@ -7,8 +7,8 @@ std::atomic<int> z;
 
 void write_x_then_y()
 {
-    x.store(true,std::memory_order_relaxed);
-    y.store(true,std::memory_order_relaxed);
+    x.store(true, std::memory_order_relaxed);
+    y.store(true, std::memory_order_relaxed);
 }
 
 void read_y_then_x()
